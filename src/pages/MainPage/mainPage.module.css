@@ -1,0 +1,104 @@
+.bannerWrapper, .collectionsWrapper, .aboutUsWrapper, .itemOfTheDay {
+  margin-bottom: min(5.5vw, 55px);
+}
+
+
+.bannerWrapper {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+
+  position: relative;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bannerActions {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-family: 'Geometria';
+  font-size: 2.2vw;
+
+  margin: 2vw 0;
+}
+
+
+.collectionsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.collectionsLinkBtn {
+  width: 29%;
+  display: grid;
+  grid-template-rows: 10fr 2fr;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: filter 0.08s;
+}
+.collectionsLinkBtn__img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.collectionsLinkBtn__text {
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Geometria';
+  font-size: 2vw;
+
+  height: 100%;
+}
+.collectionsLinkBtn:hover {
+  filter: brightness(88%);
+}
+
+
+.aboutUsWrapper {
+  width: 100%;
+  padding: min(4vw, 40px) 0;
+
+  background-color: var(--blue-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs {
+  color: #fff;
+
+  font-family: 'Geometria';
+  font-size: 1.5vw;
+
+  width: 80%;
+
+}
+
+
+.itemOfTheDay {
+  width: 100%;
+
+  display: flex;
+  overflow: hidden;
+
+  justify-content: space-evenly;
+}

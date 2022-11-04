@@ -1,0 +1,25 @@
+.filter {
+  display: flex;
+
+  margin-top: 4vw;
+  margin-bottom: 1.5vw;
+}
+.collectionLinkBtn {
+  font-family: "Geometria Bold";
+  font-size: 1.6vw;
+
+  color: black;
+  text-decoration: none;
+
+  margin-right: 1.5vw;
+}
+.collectionLinkBtn:hover {
+  color: var(--pink-color);
+}
+
+.itemList {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 -1vw;
+}

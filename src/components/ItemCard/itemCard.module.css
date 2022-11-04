@@ -1,0 +1,54 @@
+
+.itemCard {
+  width: calc(25% - 2vw);
+  margin: 1vw;
+}
+
+
+
+.itemCard {
+  /* width is dynamic parameter */
+
+  display: grid;
+  grid-template-rows: 10fr 1.5fr 4.5fr 1.5fr;
+
+  cursor: pointer;
+}
+.img {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.name, .desc, .toCartBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Geometria";
+  font-size: 1.5vw;
+}
+.name {
+  width: 100%;
+  background-color: var(--pink-color);
+  color: #fff;
+}
+.desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-color: #fff;
+}
+.toCartBtn {
+  background-color: var(--blue-color);
+  color: #fff;
+
+  transition: filter 0.08s;
+}
+.toCartBtn:hover {
+  filter: brightness(85%);
+}
