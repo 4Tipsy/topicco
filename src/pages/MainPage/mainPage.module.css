@@ -102,3 +102,16 @@
 
   justify-content: space-evenly;
 }
+
+.mapWrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.map {
+ width: 85%;
+ aspect-ratio: 1.5 / 1;
+ border: 3px solid var(--pink-color);
+ border-radius: 5px;
+}

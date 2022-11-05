@@ -1,19 +1,27 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+
+  margin-top: 5.5vw;
 }
 .sideSection {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+
+  margin-top: 1.5vw;
 }
 .number {
   font-family: "Geometria Bold";
+  font-size: 1.6vw;
+
+  margin-bottom: 1vw;
 }
 .copyright {
   font-family: "Geometria";
+  font-size: 1.6vw;
 }
 
 
@@ -23,19 +31,41 @@
   background-repeat: no-repeat;
   aspect-ratio: 101 / 39;
   height: 8vw;
+
+  margin-bottom: 3.5vw;
 }
 
 .mediaContainer {
   display: flex;
-  justify-content: space-between;
 
-  min-width: 13vw;
+  margin-bottom: 1vw;
+}
+.afterMediaText {
+  font-family: "Geometria";
+  font-size: 1.6vw;
+  width: 100%;
+  text-align: end;
 }
 .mediaIcon {
   background-size: contain;
-  height: 30px;
+  background-repeat: no-repeat;
+
+  height: min( 3.5vw, 35px);
   aspect-ratio: 1 / 1;
+
+  cursor: pointer;
+
+  margin-left: 1.6vw;
 }
 .wa {
   background-image: url(../../../public/icons/wa.svg);
+}
+.tg {
+  background-image: url(../../../public/icons/tg.svg);
+}
+.fb {
+  background-image: url(../../../public/icons/fb.svg);
+}
+.insta {
+  background-image: url(../../../public/icons/insta.svg);
 }

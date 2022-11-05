@@ -9,4 +9,14 @@ body {
   margin: 0;
   
   background-color: var(--bg-color);
+
+}
+
+div {
+  box-sizing: content-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }

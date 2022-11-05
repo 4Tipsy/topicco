@@ -57,6 +57,12 @@ function MainPage() {
           {[1, 2, 3, 4].map(id => <ItemCard itemId={id}/>)}
         </div>
       </div>
+
+
+      <div className={style.title}>Более 500 магазинов по всей России!</div>
+      <div className={style.mapWrapper}>
+        <iframe className={style.map} src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed1df3637fb6fe04e3665d5d522dc69f98632cde5efaa1410fe0ce8b425acbb9&amp;source=constructor" title="our-shops-on-map" frameborder="0"></iframe>
+      </div>
     </>
   )
 }

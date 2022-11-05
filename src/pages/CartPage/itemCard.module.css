@@ -1,0 +1,52 @@
+.itemCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1vw;
+
+  margin-bottom: 2vw;
+
+  transition: background 0.15s;
+}
+.itemCard:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.imgSection {
+  aspect-ratio: 1 / 1;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.notImgSection {
+  aspect-ratio: 1 / 1;
+
+  display: grid;
+  grid-template-rows: max-content 1px 2fr 1fr 1fr;
+  grid-row-gap: 0.3vw;
+}
+
+.name {
+  margin-top: 0.3vw; /* small deco fix */
+
+  font-family: "Geometria";
+  font-size: 1.6vw;
+}
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.desc {
+  font-family: "Geometria";
+  font-size: 1.6vw;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.price {
+  font-family: "Geometria";
+  font-size: 1.6vw;
+
+}
+.amountBtnWrapper {
+  display: flex;
+}

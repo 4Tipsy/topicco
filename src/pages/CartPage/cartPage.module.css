@@ -1,0 +1,77 @@
+.cartWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6vw;
+
+  margin: 0px 5%;
+
+  padding-top: 4vw;
+}
+
+.itemList {
+  display: flex;
+  flex-direction: column;
+}
+
+.buySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.buySectionTitle {
+  font-family: "Geometria Bold";
+  font-size: 2vw;
+
+
+  margin-bottom: 2.4vw;
+}
+.emailInput {
+  padding: 0 1vw;
+  width: 90%;
+  aspect-ratio: 90 / 8;
+
+  border: 1px solid black;
+
+  background-color: transparent;
+  outline: none;
+
+  font-family: "Geometria";
+  font-size: 1.4vw;
+
+
+  margin-bottom: 2.4vw;
+}
+.emailInput:focus {
+  border: 1px solid var(--green-color);
+}
+
+.emailInputInfo {
+  font-family: "Geometria";
+  font-size: 1.4vw;
+
+  
+  margin-bottom: 4vw;
+}
+
+.mainBuyBtn {
+  width: 55%;
+  aspect-ratio: 55 / 8;
+
+  border: 1px solid black;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Geometria";
+  font-size: 1.4vw;
+
+  transition: color 0.15s, border 0.15s, background 0.15s;
+  cursor: pointer;
+}
+.mainBuyBtn:hover {
+  color: #fff;
+  border-color: var(--green-color);
+  background-color: var(--green-color);
+}
