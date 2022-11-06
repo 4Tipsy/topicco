@@ -24,7 +24,7 @@ function ItemCard({itemId, itemImg, itemName, itemDesc, itemPrice}) {
           <div className={style.moreBtn}/>
         </div>
 
-        <div className={style.price}>{itemPrice}</div>
+        <div className={style.price}>{prettifyPrice(itemPrice)}</div>
       </div>
 
     </Link>
@@ -35,6 +35,11 @@ ItemCard.defaultProps = {
   itemName: 'no name',
   itemDesc: 'no description',
   itemPrice: '5 300 руб'
+}
+function prettifyPrice(rowPrice) {
+
+  let prettyPrice = rowPrice.toString()
+  return prettyPrice.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ') + " " + "руб"
 }
 
 

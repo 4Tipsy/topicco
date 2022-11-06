@@ -1,0 +1,58 @@
+[
+  {
+    "itemId": "1",
+    "itemImg": "imgs/example-item-img.png",
+    "itemName": "Духи \"Жасмин\"",
+    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemPrice": "5300"
+  },
+  {
+    "itemId": "2",
+    "itemImg": "imgs/example-item-img.png",
+    "itemName": "Духи \"Жасмин\"",
+    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemPrice": "5300"
+  },
+  {
+    "itemId": "3",
+    "itemImg": "imgs/example-item-img.png",
+    "itemName": "Духи \"Жасмин\"",
+    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemPrice": "5300"
+  },
+  {
+    "itemId": "4",
+    "itemImg": "imgs/example-item-img.png",
+    "itemName": "Духи \"Жасмин\"",
+    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemPrice": "5300"
+  },
+  {
+    "itemId": "5",
+    "itemImg": "imgs/example-item-img.png",
+    "itemName": "Духи \"Жасмин\"",
+    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemPrice": "5300"
+  },
+  {
+    "itemId": "6",
+    "itemImg": "imgs/example-item-img.png",
+    "itemName": "Духи \"Жасмин\"",
+    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemPrice": "5300"
+  },
+  {
+    "itemId": "7",
+    "itemImg": "imgs/example-item-img.png",
+    "itemName": "Духи \"Жасмин\"",
+    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemPrice": "5300"
+  },
+  {
+    "itemId": "8",
+    "itemImg": "imgs/example-item-img.png",
+    "itemName": "Духи \"Жасмин\"",
+    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemPrice": "5300"
+  }
+]

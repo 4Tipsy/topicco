@@ -1,13 +1,22 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import style from "./searchPage.module.css"
 
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 import ItemCard from "../../components/ItemCard/ItemCard"
 
 
 function SearchPage() {
   
+  /* getting items from data base */
+  const [itemsFromDb, setItemsFromDb] = useState([0, 0, 0, 0]);
+  const location = useLocation()
+  useEffect(() => {
+    getItemsFromDB()
+  }, [location]);
+
+
+
 
   return (
     <div style={{margin: '0 5%'}}>
@@ -29,7 +38,7 @@ function SearchPage() {
       </div>
 
       <div className={style.itemList}>
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(id => <ItemCard itemId={id} />)}
+        {[].concat(itemsFromDb).map( (item) => <ItemCard {...item} /> )}
       </div>
 
       <div className={style.pagination}>
@@ -40,6 +49,63 @@ function SearchPage() {
 
     </div>
   )
+
+
+
+
+
+
+
+
+
+
+
+
+  async function getItemsFromDB() {
+    let url = new URL(window.location)
+  
+    let requestBody = {}
+  
+    // getting searchFor param
+    switch (url.searchParams.get('searchfor')) {
+      case 'men':
+        requestBody.searchFor = 'men'
+        break
+    
+      case 'women':
+        requestBody.searchFor = 'women'
+        break
+  
+      default:
+        /* even if there is no 'searchfor' parameter */
+        requestBody.searchFor = 'all'
+        break
+    }
+  
+  
+    // getting page param
+    let pageParamInUrl = Number( url.searchParams.get('page') )
+    if ( pageParamInUrl != NaN ) {
+      requestBody.page = pageParamInUrl
+    } else {
+      requestBody.page = 1
+    }
+  
+  
+    // making a request
+    const response = fetch(
+      window.SERVER_ADDRESS,
+      {
+        method: 'post',
+        headers: {'Content-Type': 'application/json;charset=utf-8'},
+        body: requestBody
+      }
+    )
+    if (typeof response === Array) {
+      setItemsFromDb(response)
+    }
+    
+  }
 }
 
 
