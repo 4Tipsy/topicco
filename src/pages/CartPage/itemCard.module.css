@@ -42,6 +42,22 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* scrollbar customization */
+.desc > div {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+.desc > div::-webkit-scrollbar {
+  width: 5px;
+}
+.desc > div::-webkit-scrollbar-track {
+  background: transparent;
+}
+.desc > div::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
 .price {
   font-family: "Geometria";
   font-size: 1.6vw;

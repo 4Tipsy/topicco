@@ -40,7 +40,12 @@
   text-decoration: none;
 }
 .navBtn:hover {
-  color: #F29F8D;
+  color: var(--pink-color);
+}
+.navBtn._active {
+  color: var(--pink-color);
+  cursor: default;
+  text-decoration: underline;
 }
 
 

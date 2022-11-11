@@ -21,17 +21,17 @@ function MainPage() {
       <div className={style.title}>Коллекции ароматов</div>
       <div className={style.collectionsWrapper}>
 
-          <Link to='/search?for-female' className={style.collectionsLinkBtn}>
+          <Link to='/search?searchFor=female' className={style.collectionsLinkBtn}>
             <div className={style.collectionsLinkBtn__img} style={{backgroundImage: 'url(imgs/collections__forFemale.png)'}}/>
             <div className={style.collectionsLinkBtn__text} style={{backgroundColor: 'var(--pink-color)'}}>Для женщин</div>
           </Link>
 
-          <Link to='/search?for-male' className={style.collectionsLinkBtn}>
+          <Link to='/search?searchFor=male' className={style.collectionsLinkBtn}>
             <div className={style.collectionsLinkBtn__img} style={{backgroundImage: 'url(imgs/collections__forMale.png)'}}/>
             <div className={style.collectionsLinkBtn__text} style={{backgroundColor: 'var(--blue-color)'}}>Для мужчин</div>
           </Link>
 
-          <Link to='/search?for-all' className={style.collectionsLinkBtn}>
+          <Link to='/search?searchFor=all' className={style.collectionsLinkBtn}>
             <div className={style.collectionsLinkBtn__img} style={{backgroundImage: 'url(imgs/collections__forAll.png)'}}/>
             <div className={style.collectionsLinkBtn__text} style={{backgroundColor: 'var(--green-color)'}}>Для всех</div>
           </Link>

@@ -53,7 +53,7 @@
 .collectionsLinkBtn__img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .collectionsLinkBtn__text {

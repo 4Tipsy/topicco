@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./header.module.css"
 
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 function Header() {
   
@@ -13,10 +13,19 @@ function Header() {
         <Link to={'/'} className={style.logo} />
 
         <div className={style.navContainer}>
-          <a href='#' className={style.navBtn}>Главная</a>
-          <a href='#' className={style.navBtn}>Коллекция ароматов</a>
-          <a href='#' className={style.navBtn}>О нас</a>
-          <a href='#' className={style.navBtn}>Контакты</a>
+
+          <NavLink className={( {isActive}) => isActive ? style.navBtn+' '+style._active : style.navBtn}
+          to={'/'}>Главная</NavLink>
+
+          <NavLink className={( {isActive}) => isActive ? style.navBtn+' '+style._active : style.navBtn}
+          to={'/search'}>Коллекция ароматов</NavLink>
+
+          <NavLink className={( {isActive}) => isActive ? style.navBtn+' '+style._active : style.navBtn}
+          to={'/faq'}>FAQ</NavLink>
+
+          <NavLink className={( {isActive}) => isActive ? style.navBtn+' '+style._active : style.navBtn}
+          to={'/placeholder'}>Контакты</NavLink>
+
         </div>
 
         <div className={style.userBtnsContainer}>

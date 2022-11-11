@@ -6,10 +6,10 @@ import { Link } from "react-router-dom"
 
 
 function ItemCard({itemId, itemImg, itemName, itemDesc, itemPrice}) {
-  
+
 
   return (
-    <Link to={`/item/${itemId}`} className={style.itemCard} data-id={itemId} key={itemId}>
+    <Link to={`/item?id=${itemId}`} className={style.itemCard} data-id={itemId} key={itemId}>
 
       <div className={style.imgSection} style={{backgroundImage: `url(${itemImg})`}}/>
 
@@ -34,7 +34,8 @@ ItemCard.defaultProps = {
   itemImg: 'imgs/example-item-img.png',
   itemName: 'no name',
   itemDesc: 'no description',
-  itemPrice: '5 300 руб'
+  itemPrice: '5 300 руб',
+  for: 'all'
 }
 function prettifyPrice(rowPrice) {
 
