@@ -96,7 +96,8 @@ function Slider({idsToGet}) {
 }
 Slider.defaultProps = {
 
-  idsToGet: ['1', '2', '3', '4']
+  idsToGet: ['101', '102', '103', '104']
+  /* ! if id's are wrong, u will get error ! */
 
 }
 

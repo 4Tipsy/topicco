@@ -26,7 +26,9 @@ function ItemCard({itemId, itemImg, itemName, itemDesc, itemPrice, for: itemFor}
   return (
     <Link to={`/item/${itemId}`} className={style.itemCard} data-id={itemId}>
       <div className={style.img} style={{backgroundImage: `url(${itemImg})`}}/>
-      <div className={style.name} style={colorItemName(itemFor)}>{itemName}</div>
+      <div className={style.name} style={colorItemName(itemFor)}>
+        <span>{itemName}</span>
+      </div>
       <div className={style.desc}>
         <div style={{maxHeight: '60%', overflowY: 'auto'}}>{itemDesc}</div>
         <div style={{marginTop: '0.5vw'}}>{prettifyPrice(itemPrice)}</div>

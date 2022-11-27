@@ -8,18 +8,23 @@
 
 .itemCard {
   /* width is dynamic parameter */
-
-  display: grid;
-  grid-template-rows: 10fr 1.5fr 5fr 1.5fr;
+  aspect-ratio: 1.5 / 1;
 
   cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
 }
 .img {
   background-repeat: no-repeat;
   background-size: cover;
 
   width: 100%;
-  aspect-ratio: 0.99 / 1; /* 0.99 is a deco fix */
+  aspect-ratio: 1 / 1; /* 0.99 is a deco fix */
+
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
+  border-bottom: none;
+  box-sizing: border-box;
 }
 
 .name, .desc, .toCartBtn {
@@ -29,6 +34,16 @@
 
   font-family: "Geometria";
   font-size: 1.5vw;
+}
+.name, .toCartBtn {
+  height: 20%;
+
+}
+.name > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0.5vw;
 }
 .name {
   width: 100%;
@@ -45,6 +60,9 @@
   text-align: center;
 
   background-color: #fff;
+
+
+  height: 99%;
 }
 .toCartBtn {
   background-color: var(--blue-color);

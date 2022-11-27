@@ -15,6 +15,9 @@
 
   background-repeat: no-repeat;
   background-size: contain;
+
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
+  box-sizing: border-box;
 }
 .notImgSection {
   aspect-ratio: 1 / 1;

@@ -1,82 +1,154 @@
 [
   {
-    "itemId": "1",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Духи \"Вишня\"",
-    "itemDesc": "Женские духи с ароматом аристократической вишни",
+    "itemId": "101",
+    "itemImg": "imgs/Horus.webp",
+    "itemName": "Horus",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "itemPrice": "4750",
     "for": "women"
   },
   {
-    "itemId": "2",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Solle Mapa",
-    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemId": "102",
+    "itemImg": "imgs/Leman_Russ.jpg",
+    "itemName": "Leman Russ",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "itemPrice": "4100",
+    "for": "all"
+  },
+  {
+    "itemId": "103",
+    "itemImg": "imgs/Ferrus_Manus.webp",
+    "itemName": "Ferrus Manus",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "6540",
     "for": "men"
   },
   {
-    "itemId": "3",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Solle Indigo",
-    "itemDesc": "Женские духи с ароматом жасмина и легкими нотками календулы",
-    "itemPrice": "3540",
-    "for": "women"
-  },
-  {
-    "itemId": "4",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Духи \"Fo Mee, Perra\"",
-    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemId": "104",
+    "itemImg": "imgs/Fulgrim.webp",
+    "itemName": "Fulgrim",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "itemPrice": "5380",
-    "for": "men"
-  },
-  {
-    "itemId": "5",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Axima Dast",
-    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
-    "itemPrice": "7590",
     "for": "women"
   },
   {
-    "itemId": "6",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Axima Prada",
-    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
+    "itemId": "105",
+    "itemImg": "imgs/Vulkan.webp",
+    "itemName": "Vulkan",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "7590",
+    "for": "all"
+  },
+  {
+    "itemId": "106",
+    "itemImg": "imgs/Rogal_Dorn.webp",
+    "itemName": "Rogal Dorn",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "itemPrice": "5640",
     "for": "women"
   },
   {
-    "itemId": "7",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Sekvessa",
-    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
-    "itemPrice": "5890",
+    "itemId": "107",
+    "itemImg": "imgs/Roboute_Guilliman.webp",
+    "itemName": "Roboute Guilliman",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "7890",
     "for": "men"
   },
   {
-    "itemId": "8",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Туалетная вода \"Ms.Maggy\"",
-    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
-    "itemPrice": "7500",
+    "itemId": "108",
+    "itemImg": "imgs/Magnus.webp",
+    "itemName": "Magnus",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "6510",
     "for": "women"
   },
   {
-    "itemId": "9",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Cokka La Nesio",
-    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
-    "itemPrice": "7200",
+    "itemId": "109",
+    "itemImg": "imgs/Lion_El_Jonson.webp",
+    "itemName": "Lion El'Jonson",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "5440",
+    "for": "women"
+  },
+  {
+    "itemId": "110",
+    "itemImg": "imgs/Perturabo.webp",
+    "itemName": "Perturabo",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "6250",
+    "for": "women"
+  },
+  {
+    "itemId": "111",
+    "itemImg": "imgs/Mortarion.webp",
+    "itemName": "Mortarion",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "6250",
+    "for": "men"
+  },
+  {
+    "itemId": "112",
+    "itemImg": "imgs/Lorgar.webp",
+    "itemName": "Lorgar",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "7020",
+    "for": "men"
+  },
+  {
+    "itemId": "113",
+    "itemImg": "imgs/Jaghatai_Khan.webp",
+    "itemName": "Jaghatai Khan",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "5640",
     "for": "all"
   },
   {
-    "itemId": "10",
-    "itemImg": "imgs/example-item-img.png",
-    "itemName": "Imsa Black",
-    "itemDesc": "Женские духи \"Жасмин\" с ароматом жасмина и легкими нотками календулы",
-    "itemPrice": "6250",
+    "itemId": "114",
+    "itemImg": "imgs/Konrad_Curze.webp",
+    "itemName": "Konrad Curze",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "6480",
+    "for": "all"
+  },
+  {
+    "itemId": "115",
+    "itemImg": "imgs/Angron.webp",
+    "itemName": "Angron",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "5490",
     "for": "men"
+  },
+  {
+    "itemId": "116",
+    "itemImg": "imgs/Corvus_Corax.webp",
+    "itemName": "Corvus Corax",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "5075",
+    "for": "women"
+  },
+  {
+    "itemId": "117",
+    "itemImg": "imgs/Alpharius_Omegon.webp",
+    "itemName": "Alpharius Omegon",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "4290",
+    "for": "women"
+  },
+  {
+    "itemId": "118",
+    "itemImg": "imgs/In_honor_of_unknown_Primarchs.jpg",
+    "itemName": "In honor of unknown Primarchs",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "4305",
+    "for": "men"
+  },
+  {
+    "itemId": "119",
+    "itemImg": "imgs/Emperor_of_Mankind.webp",
+    "itemName": "Emperor of Mankind",
+    "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "itemPrice": "9999",
+    "for": "all"
   }
 ]
