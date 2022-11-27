@@ -57,6 +57,7 @@
   aspect-ratio: 1 / 1;
 
   cursor: pointer;
+  position: relative;
 }
 
 .cart path, .acc path {
@@ -64,4 +65,24 @@
 }
 .cart:hover path, .acc:hover path {
   stroke: var(--pink-color);
+}
+
+.cartAmountIndicatorWrapper {
+  position: absolute;
+  left: 6%;
+  bottom: 5%;
+
+  height: 46%;
+  aspect-ratio: 1 / 1;
+
+  background-color: var(--blue-color);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartAmountIndicator {
+  font-family: "Geometria Bald";
+  font-size: 1.6vw;
 }

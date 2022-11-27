@@ -16,7 +16,7 @@ function Footer() {
           <div className={style.copyright}>copyright © 2022 topicco</div>
         </div>
 
-        <Link to={'/'} className={style.logo} />
+        <Link to={'/main'} className={style.logo} />
 
         <div className={style.sideSection}>
           <div className={style.mediaContainer}>

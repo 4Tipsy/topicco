@@ -1,7 +1,7 @@
 import axios from "axios"
 
 
-async function getRenderableItems(setItemsFromDb, setForPagination) {
+async function getRenderableItems(setItemsFromDb, setForPagination, setStatus) {
   let url = new URL(window.location)
 
   let requestBody = {}
@@ -24,19 +24,37 @@ async function getRenderableItems(setItemsFromDb, setForPagination) {
 
 
   // making a request
-  const response = await axios.post(
+  let response = {}
+  axios.post(
     window.SERVER_ADDRESS + '/get-items',
     JSON.stringify(requestBody),
-    { headers: {'Content-Type': 'application/json', 'charset': 'utf-8'} }
+    { headers: {'Content-Type': 'application/json', 'charset': 'utf-8'}, 
+    timeout: 6000 }
   )
+  .then ((resp) => {
+    response = resp
 
+  })
+  .catch ((error) => {
+    response.status = 500
+    console.warn(error)
+  })
+  .then (() => {
 
+    if (response.status === 200) {
+      setStatus(200)
 
-  if (response.status === 200) {
-    let [preparedItems, forPagination] = prepareItemsToRender(response.data)
-    setItemsFromDb(preparedItems)
-    setForPagination(forPagination)
-  }
+      let [preparedItems, forPagination] = prepareItemsToRender(response.data)
+      setItemsFromDb(preparedItems)
+      setForPagination(forPagination)
+    
+    } else {
+      setStatus(500)
+
+      console.warn('Server error has occurred')
+    }
+
+  })
 }
 
 

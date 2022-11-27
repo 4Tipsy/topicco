@@ -12,6 +12,13 @@
   display: flex;
   flex-direction: column;
 }
+.itemListMassage {
+  width: 100%;
+  font-family: 'Geometria Bold';
+  font-size: 1.8vw;
+
+  text-align: center;
+}
 
 .buySection {
   display: flex;

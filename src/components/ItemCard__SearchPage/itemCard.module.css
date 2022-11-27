@@ -19,7 +19,7 @@
   background-size: cover;
 
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 0.99 / 1; /* 0.99 is a deco fix */
 }
 
 .name, .desc, .toCartBtn {

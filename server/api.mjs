@@ -3,8 +3,10 @@ import express from 'express'
 import bodyParser from 'body-parser'
 
 
-// modules
-import getItems from './modules/getItems.mjs'
+// routes
+import getItems from './routes/getItems.mjs'
+import getItemsByIds from './routes/getItemsByIds.mjs'
+import getItemById from './routes/getItemById.mjs'
 
 
 // some globals
@@ -35,7 +37,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // routing
 app.post('/get-items', getItems)
 
+app.post('/get-items-by-ids', getItemsByIds)
 
+app.post('/get-item-by-id', getItemById)
 
 
 

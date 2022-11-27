@@ -3,20 +3,21 @@ import style from "./searchPage.module.css"
 
 import { Link, useLocation, useNavigate } from "react-router-dom"
 
-import ItemCard from "../../components/ItemCard/ItemCard"
+import ItemCard from "../../components/ItemCard__SearchPage/ItemCard"
 import getRenderableItems from "./_getRenderableItems"
 
 
 function SearchPage() {
   
   /* getting items from data base */
-  const [itemsFromDb, setItemsFromDb] = useState([0, 0, 0, 0])
+  const [status, setStatus] = useState(102)
+  const [itemsFromDb, setItemsFromDb] = useState(undefined)
   const [forPagination, setForPagination] = useState([1])
   const location = useLocation()
 
 
   useEffect(() => {
-    getRenderableItems(setItemsFromDb, setForPagination)
+    getRenderableItems(setItemsFromDb, setForPagination, setStatus)
   }, [location]);
 
 
@@ -25,7 +26,6 @@ function SearchPage() {
   const url = new URL(window.location)
   let searchFor = url.searchParams.get('searchFor');
   (searchFor !== 'women' && searchFor !== 'men') && (searchFor = 'all');
-
 
 
 
@@ -48,7 +48,7 @@ function SearchPage() {
         }>Для мужчин</Link>
 
         <Link to={'/search?searchFor=all'} className={
-          (searchFor === 'women')
+          (searchFor === 'all')
           ? style.collectionLinkBtn +' '+ style._active
           : style.collectionLinkBtn
         }>Для всех</Link>
@@ -61,7 +61,21 @@ function SearchPage() {
       </div>
 
       <div className={style.itemList}>
-        {itemsFromDb.map( (item) => <ItemCard {...item} key={item.itemId}/> )}
+
+        {/* rendering items */}
+
+        {
+          status === 102
+          ? <div className={style.itemListMassage}>Loading...</div>
+
+          : status === 200
+          ? itemsFromDb.map( (item) => <ItemCard {...item} key={item.itemId}/> )
+
+          : status === 500
+          ? <div className={style.itemListMassage}>Server error,<br/>please try later</div>
+
+          : <></>
+        }
       </div>
 
       <div className={style.pagination}>

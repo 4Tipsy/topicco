@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 import { Link } from "react-router-dom"
 import style from "./mainPage.module.css"
 
-import ItemCard from "../../components/ItemCard/ItemCard";
+import ItemCard from "../../components/ItemCard__SearchPage/ItemCard";
+
+
+import getRenderableItems from "./_getRenderableItems";
 
 
 function MainPage() {
-  
+
 
   return (
     <>
@@ -21,12 +24,12 @@ function MainPage() {
       <div className={style.title}>Коллекции ароматов</div>
       <div className={style.collectionsWrapper}>
 
-          <Link to='/search?searchFor=female' className={style.collectionsLinkBtn}>
+          <Link to='/search?searchFor=women' className={style.collectionsLinkBtn}>
             <div className={style.collectionsLinkBtn__img} style={{backgroundImage: 'url(imgs/collections__forFemale.png)'}}/>
             <div className={style.collectionsLinkBtn__text} style={{backgroundColor: 'var(--pink-color)'}}>Для женщин</div>
           </Link>
 
-          <Link to='/search?searchFor=male' className={style.collectionsLinkBtn}>
+          <Link to='/search?searchFor=men' className={style.collectionsLinkBtn}>
             <div className={style.collectionsLinkBtn__img} style={{backgroundImage: 'url(imgs/collections__forMale.png)'}}/>
             <div className={style.collectionsLinkBtn__text} style={{backgroundColor: 'var(--blue-color)'}}>Для мужчин</div>
           </Link>
@@ -53,9 +56,7 @@ function MainPage() {
 
       <div className={style.title}>Товар дня</div>
       <div style={{margin: '0 3%'}}>
-        <div className={style.itemOfTheDay}>
-          {[1, 2, 3, 4].map(id => <ItemCard itemId={id}/>)}
-        </div>
+        <Slider />
       </div>
 
 
@@ -67,6 +68,37 @@ function MainPage() {
   )
 }
 
+function Slider({idsToGet}) {
+  
+  const [itemsFromDb, setItemsFromDb] = useState(undefined)
+  const [status, setStatus] = useState(102)
+
+  useEffect(() => {
+    getRenderableItems(idsToGet, setItemsFromDb, setStatus)
+  }, []);
+
+  return (
+    <div className={style.itemOfTheDay}>
+      {
+        status === 102
+        ? <div className={style.itemOfTheDayMassage}>{'<Loading... >'}</div>
+
+        : status === 200
+        ? [...itemsFromDb].map(item => <ItemCard {...item} key={item.itemId}/>)
+
+        : status === 500
+        ? <div className={style.itemOfTheDayMassage}>{'<Server error, please try later>'}</div>
+
+        :<></>
+      }
+    </div>
+  )
+}
+Slider.defaultProps = {
+
+  idsToGet: ['1', '2', '3', '4']
+
+}
 
 
 
