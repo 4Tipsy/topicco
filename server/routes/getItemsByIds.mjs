@@ -7,7 +7,7 @@ const getItemsByIds = (req, res) => {
 
   try {
       
-    const items = JSON.parse( fs.readFileSync('server/data-base--items.json', 'utf-8') )
+    const items = JSON.parse( fs.readFileSync(global.PATH_TO_JSON, 'utf-8') )
 
     let idsToGet = req.body.idsToGet
 
@@ -29,6 +29,7 @@ const getItemsByIds = (req, res) => {
 
 
   } catch(e) {
+    console.log(e)
     res.status(500)
     res.send(e)
   }

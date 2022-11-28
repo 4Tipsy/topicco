@@ -40,6 +40,8 @@ function App() {
         <Route path='/faq' element={<FaqPage/>} />
 
         <Route path='/' element={<Navigate to="/main" replace />} />
+
+        <Route path='*' component={NoMatch} status={404}/>
       </Routes>
 
       <Footer />

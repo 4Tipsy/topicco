@@ -10,8 +10,9 @@ import getItemById from './routes/getItemById.mjs'
 
 
 // some globals
-global.CLIENT_ADDRESS = 'http://localhost:3000'
+global.CLIENT_ADDRESS = 'http://localhost:3000' // set to false in production
 global.SERVER_PORT = 3030
+global.PATH_TO_JSON = 'server/data-base--items.json'
 
 
 
@@ -40,6 +41,14 @@ app.post('/get-items', getItems)
 app.post('/get-items-by-ids', getItemsByIds)
 
 app.post('/get-item-by-id', getItemById)
+
+
+
+// return index.html
+app.use(express.static("/home/qwerty/my-projects/topicco/build")) // <-- set abs path to *build*
+app.get("*", (req, res) => {
+  res.sendFile("/home/qwerty/my-projects/topicco/build/index.html") // <-- set abs path to *build/index.html*
+})
 
 
 
