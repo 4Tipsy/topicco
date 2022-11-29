@@ -28,7 +28,7 @@ const CartPage = observer(() => {
 
         { 
         [...cart.items].length === 0
-        ? <div className={style.itemListMassage}>No items yet</div>
+        ? <div className={style.itemListMassage}>Корзина пуста</div>
 
         : status === 102
         ? <div className={style.itemListMassage}>Loading...</div>
@@ -52,7 +52,7 @@ const CartPage = observer(() => {
           <input className={style.emailInput} type='text' placeholder="Ваш адрес электронной почты"/>
           <div className={style.emailInputInfo}>Введите адрес своей электронной почты. На этот адрес будут отправляться уведомления о статусе заказа.</div>
           
-          <div className={style.mainBuyBtn}>Оформить заказ</div>
+          <div className={style.mainBuyBtn} onClick={ e => window.alert('Тут должен быть редерикт на страничку оплаты=)') }>Оформить заказ</div>
         </div>
       </div>
 

@@ -27,19 +27,19 @@ const ItemPage = () => {
     <>
     {
       status === 102
-      ? <div>Loading...</div>
+      ? <div className={style.itemPageMassage}>Loading...</div>
 
       : status === 200
       ? <ItemPageInner {...itemFromDB} />
 
       : status === 400
-      ? <div>Неправильный запрос,<br/>проверьте URL-адресс</div>
+      ? <div className={style.itemPageMassage}>Неправильный запрос,<br/>проверьте URL-адресс</div>
 
       : status === 204
-      ? <div>Товар с таким id не найден</div>
+      ? <div className={style.itemPageMassage}>Товар с таким id не найден</div>
 
       : status == 500
-      ? <div>Server error,<br/>please try later</div>
+      ? <div className={style.itemPageMassage}>Server error,<br/>please try later</div>
 
       : <></>
     }

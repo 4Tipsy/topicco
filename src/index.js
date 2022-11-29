@@ -9,7 +9,7 @@ import './font-kit.css'
 
 
 
-window.SERVER_ADDRESS = 'http://localhost:3030' // used in fetch requests (change to site's domen in production [with no "/" at the end])
+window.SERVER_ADDRESS = 'http://localhost:3060' // used in fetch requests (change to site's domen in production [with no "/" at the end])
 
 
 

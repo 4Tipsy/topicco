@@ -11,8 +11,8 @@ import getItemById from './routes/getItemById.mjs'
 
 // some globals
 global.CLIENT_ADDRESS = 'http://localhost:3000' // set to false in production
-global.SERVER_PORT = 3030
-global.PATH_TO_JSON = 'server/data-base--items.json'
+global.SERVER_PORT = 3060
+global.PATH_TO_JSON = 'server/data-base--items.json' //(for me)/ should be abs path =/
 
 
 
@@ -45,10 +45,15 @@ app.post('/get-item-by-id', getItemById)
 
 
 // return index.html
-app.use(express.static("/home/qwerty/my-projects/topicco/build")) // <-- set abs path to *build*
-app.get("*", (req, res) => {
-  res.sendFile("/home/qwerty/my-projects/topicco/build/index.html") // <-- set abs path to *build/index.html*
+app.use(express.static("/home/qwerty/my-projects/topicco/build")); // <-- set abs path to *build*
+
+['/', '/main', '/search', '/cart', '/item', '/faq'].forEach( route => {
+
+  app.get(route, (req, res) => {
+    res.sendFile("/home/qwerty/my-projects/topicco/build/index.html") // <-- set abs path to *build/index.html*
+  })
 })
+
 
 
 

@@ -13,7 +13,7 @@ const getItems = (req, res) => {
     const searchFor = req.body.searchFor
     let itemsToReturn = []
 
-    if (searchFor != 'all') {
+    /*if (searchFor != 'all') {*/
       items.forEach(
 
         (item) => {
@@ -23,10 +23,10 @@ const getItems = (req, res) => {
         }
 
       )
-    } else {
+    /*} else {
 
       itemsToReturn = [...items]
-    }
+    }*/
 
 
     res.status(200)
